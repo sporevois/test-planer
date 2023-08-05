@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { Plus } from 'react-swm-icon-pack';
 
 export const AddButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 193px;
   margin-left: 24px;
   border: none;
@@ -15,9 +18,12 @@ export const AddButton = styled.button`
   font-weight: 500;
   &:hover {
     cursor: pointer;
+    scale: 1.05;
+    transition: 250ms;
   }
 `;
 
 export const PlusIcon = styled(Plus)`
   pointer-events: none;
+  margin-right: 16px;
 `;

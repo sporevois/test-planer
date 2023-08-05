@@ -2,7 +2,7 @@ import { AddButton, PlusIcon } from './AddeventBtn.styled';
 const AddEventBtn = () => {
   return (
     <AddButton>
-      <PlusIcon />
+      <PlusIcon color="white" />
       Add new event
     </AddButton>
   );

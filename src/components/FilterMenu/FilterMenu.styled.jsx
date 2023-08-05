@@ -20,9 +20,12 @@ export const Select = styled.select`
   font-weight: 500;
   &:hover {
     cursor: pointer;
+    color: #7b61ff;
+    transition: 250ms;
   }
   &:focus {
     outline: none;
+    color: #7b61ff;
   }
 `;
 
