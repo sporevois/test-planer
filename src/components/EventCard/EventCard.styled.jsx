@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Default from '../../images/default.svg';
 
 export const Card = styled.div`
+  overflow: hidden;
   width: 302px;
   height: 480px;
   border: none;
@@ -13,13 +14,13 @@ export const Card = styled.div`
 export const ImageThumb = styled.div`
   width: 100%;
   height: 336px;
-  overfliw: hidden;
+
   background-image: url(${Default});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 `;
-// const Image =
+
 export const Wrapper = styled.div`
   position: relative;
   top: 296px;

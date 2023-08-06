@@ -8,11 +8,14 @@ import {
   Wrapper,
   TextContainer,
 } from './EventCard.styled';
+import Sticker from 'components/Sticker/Sticker';
+import Background from '../../images/test_card_image.jpg';
 
 const EventCard = () => {
   return (
     <Card>
-      <ImageThumb>
+      <ImageThumb style={{ backgroundImage: `url(${Background})` }}>
+        <Sticker />
         <Wrapper>
           <DateAndTime>12.07 at 12:00</DateAndTime>
           <Location>Kyiv</Location>
