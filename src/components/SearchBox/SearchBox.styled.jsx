@@ -21,7 +21,7 @@ export const SearchInput = styled.input`
   line-height: 1;
   font-weight: 300;
   :focus {
-    outline: none;
+    outline: 2px solid rgba(123, 97, 255, 1);
   }
 `;
 

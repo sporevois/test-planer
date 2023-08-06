@@ -23,6 +23,12 @@ export const AddButton = styled.button`
     background-color: rgba(98, 67, 255, 1);
     transition: 250ms;
   }
+  &: focus {
+    outline: none;
+    scale: 1.02;
+    background-color: rgba(98, 67, 255, 1);
+    transition: 250ms;
+  }
 `;
 
 export const PlusIcon = styled(Plus)`

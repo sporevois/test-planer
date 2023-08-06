@@ -1,9 +1,14 @@
-const AddEvent = () => {
+import { PageTitle } from 'components/PageTitle/PageTitle.styled';
+import GoBackBtn from 'components/GoBackBtn/GoBackBtn';
+import AddEventForm from 'components/AddEventForm/AddEventForm';
+const AddEventPage = () => {
   return (
-    <div>
-      <p>EDD EVENT FORM</p>
-    </div>
+    <>
+      <GoBackBtn />
+      <PageTitle>Create new event</PageTitle>
+      <AddEventForm />
+    </>
   );
 };
 
-export default AddEvent;
+export default AddEventPage;
