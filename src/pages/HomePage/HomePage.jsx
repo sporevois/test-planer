@@ -2,7 +2,7 @@ import { PageTitle } from 'components/PageTitle/PageTitle.styled';
 import PageOptions from 'components/PageOptions/PageOptions';
 import { PageBar, CardGrid } from './HomePage.styled';
 import EventCard from 'components/EventCard/EventCard';
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <PageBar>
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

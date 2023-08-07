@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Filters2 } from 'react-swm-icon-pack';
 
 export const Menu = styled.div`
+  margin-right: 24px;
   display: flex;
   align-items: center;
 `;

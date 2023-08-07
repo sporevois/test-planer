@@ -4,6 +4,7 @@ export const PageBar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 42px;
 `;
 
 export const CardGrid = styled.div`

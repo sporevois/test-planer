@@ -20,7 +20,12 @@ export const ImageThumb = styled.div`
   background-position: center;
   background-size: cover;
 `;
-
+export const StiskersContainer = styled.div`
+  display: flex;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 12px;
+`;
 export const Wrapper = styled.div`
   position: relative;
   top: 296px;

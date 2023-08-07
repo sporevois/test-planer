@@ -14,6 +14,7 @@ export const FormGrid = styled.div`
   width: 100%;
   display: grid;
   justify-content: center;
+  margin-bottom: 40px;
   column-gap: 42px;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 372px);
@@ -86,38 +87,6 @@ export const Select = styled.select`
   }
   :focus {
     outline: 2px solid rgba(123, 97, 255, 1);
-  }
-`;
-
-export const SubmitBtn = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 193px;
-  margin-left: auto;
-  margin-top: 60px;
-  padding: 16px 12px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 2px 4px 9px rgba(166, 141, 174, 0.28);
-  background-color: rgba(123, 97, 255, 1);
-  color: rgba(255, 255, 255, 1);
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-
-  &:hover {
-    cursor: pointer;
-    scale: 1.02;
-    background-color: rgba(98, 67, 255, 1);
-    transition: 250ms;
-  }
-  &: focus {
-    outline: none;
-    scale: 1.02;
-    background-color: rgba(98, 67, 255, 1);
-    transition: 250ms;
   }
 `;
 

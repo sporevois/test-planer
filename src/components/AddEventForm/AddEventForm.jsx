@@ -6,9 +6,9 @@ import {
   Select,
   Textarea,
   TextareaLabel,
-  SubmitBtn,
   ChevronIcon,
 } from './AddEventForm.styled';
+import { AddButton } from 'components/Buttons/Buttons.styled';
 
 const AddEventForm = () => {
   return (
@@ -51,7 +51,7 @@ const AddEventForm = () => {
           <ChevronIcon color="rgba(123, 97, 255, 1)" />
         </Label>
       </FormGrid>
-      <SubmitBtn>Add event</SubmitBtn>
+      <AddButton>Add event</AddButton>
     </Form>
   );
 };
