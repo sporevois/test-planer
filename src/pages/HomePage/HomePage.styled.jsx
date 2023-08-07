@@ -7,7 +7,7 @@ export const PageBar = styled.div`
   margin-top: 42px;
 `;
 
-export const CardGrid = styled.div`
+export const CardGrid = styled.ul`
   display: grid;
   gap: 24px;
   margin-top: 40px;

@@ -1,7 +1,7 @@
 import { Button, BtnIcon } from './GoBackBtn.styled';
-const GoBackBtn = () => {
+const GoBackBtn = ({ to }) => {
   return (
-    <Button>
+    <Button to={to}>
       <BtnIcon color="rgba(123, 97, 255, 1)" />
       Back
     </Button>

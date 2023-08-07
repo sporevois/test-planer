@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { ArrowLeft } from 'react-swm-icon-pack';
+import { Link } from 'react-router-dom';
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   display: flex;
   margin: 0 0 17px 0;
   padding: 5px;

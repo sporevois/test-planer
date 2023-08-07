@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Default from '../../images/default.svg';
 
-export const Card = styled.div`
+export const Card = styled.li`
+  list-style: none;
   overflow: hidden;
   width: 302px;
   height: 480px;
