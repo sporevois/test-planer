@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import Default from '../../images/default.svg';
+import { Link } from 'react-router-dom';
 
 export const Card = styled.li`
+  box-sizing: border-box;
   list-style: none;
   overflow: hidden;
   width: 302px;
@@ -11,7 +13,15 @@ export const Card = styled.li`
   box-sizing: border-box;
   box-shadow: 2px 4px 9px rgba(166, 141, 174, 0.28);
   background-color: rgba(255, 255, 255, 1);
+  :hover {
+    cursor: pointer;
+    scale: 1.02;
+  }
 `;
+export const LinkWraper = styled(Link)`
+  text-decoration: none;
+`;
+
 export const ImageThumb = styled.div`
   width: 100%;
   height: 336px;

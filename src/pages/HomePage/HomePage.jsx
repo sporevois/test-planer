@@ -1,7 +1,7 @@
 import { PageTitle } from 'components/PageTitle/PageTitle.styled';
 import PageOptions from 'components/PageOptions/PageOptions';
-import { PageBar, CardGrid } from './HomePage.styled';
-import EventCard from 'components/EventCard/EventCard';
+import { PageBar } from './HomePage.styled';
+import EventList from 'components/EventList/EventList';
 
 const HomePage = () => {
   return (
@@ -10,18 +10,7 @@ const HomePage = () => {
         <PageTitle>My events</PageTitle>
         <PageOptions />
       </PageBar>
-      <CardGrid>
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-      </CardGrid>
+      <EventList />
     </>
   );
 };

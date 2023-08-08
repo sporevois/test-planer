@@ -39,9 +39,6 @@ export const Input = styled.input`
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  :focus {
-    outline: 2px solid rgba(123, 97, 255, 1);
-  }
 `;
 export const TextareaLabel = styled.label`
   grid-column: 1 / span 1;
@@ -53,7 +50,7 @@ export const TextareaLabel = styled.label`
   font-weight: 400;
   letter-spacing: 0.4px;
 `;
-export const Textarea = styled.textarea`
+export const Textarea = styled.input`
   box-sizing: border-box;
   width: 100%;
   height: 156px;
@@ -89,6 +86,7 @@ export const Select = styled.select`
     outline: 2px solid rgba(123, 97, 255, 1);
   }
 `;
+export const Option = styled.option``;
 
 export const ChevronIcon = styled(ChevronSmallDown)`
   pointer-events: none;

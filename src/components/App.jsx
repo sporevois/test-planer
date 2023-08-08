@@ -9,10 +9,8 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/add-event" element={<AddEvent />} /> */}
-        {/* <Route path="/" element={<AddEventPage />} /> */}
-        {/* <Route path="/event" element={<EventPage />} /> */}
-        {/* <Route path="/" element={<EventPage />} /> */}
+        <Route path="/add-event" element={<AddEventPage />} />
+        <Route path="/event" element={<EventPage />} />
         <Route path="*" element={<h4>Sorry, page not found</h4>} />
       </Route>
     </Routes>

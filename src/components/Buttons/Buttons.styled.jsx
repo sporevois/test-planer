@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { Plus } from 'react-swm-icon-pack';
+import { Link } from 'react-router-dom';
 
-export const AddButton = styled.button`
+export const AddButton = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +14,36 @@ export const AddButton = styled.button`
   box-shadow: 2px 4px 9px rgba(166, 141, 174, 0.28);
   background-color: rgba(123, 97, 255, 1);
   color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  transition: 250ms;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(98, 67, 255, 1);
+  }
+  &: focus {
+    outline: none;
+    background-color: rgba(98, 67, 255, 1);
+  }
+`;
+
+export const SubmitButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 193px;
+  margin-left: auto;
+  padding: 16px 12px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 4px 9px rgba(166, 141, 174, 0.28);
+  background-color: rgba(123, 97, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.5;

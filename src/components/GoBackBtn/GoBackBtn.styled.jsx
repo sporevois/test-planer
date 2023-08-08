@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Button = styled(Link)`
   display: flex;
+  width: 67px;
   margin: 0 0 17px 0;
   padding: 5px;
   align-items: center;
@@ -11,6 +12,7 @@ export const Button = styled(Link)`
   border-radius: 8px;
   background-color: transparent;
   color: rgba(123, 97, 255, 1);
+  text-decoration: none;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
