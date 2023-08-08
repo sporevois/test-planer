@@ -26,11 +26,11 @@ const AddEventForm = () => {
 
   const checkPriority = value => {
     switch (value) {
-      case 'high':
+      case 'High':
         return setPriorityColor('rgba(255, 43, 119, 1)');
-      case 'low':
+      case 'Low':
         return setPriorityColor('rgba(107, 212, 117, 1)');
-      case 'medium':
+      case 'Medium':
         return setPriorityColor('rgba(226, 163, 0, 1)');
       default:
         return;
@@ -39,7 +39,6 @@ const AddEventForm = () => {
   const onCategoryChange = e => {
     const value = e.target.value;
     setCategory(value);
-    console.log(priority);
   };
 
   const onPriorityChange = e => {
@@ -144,13 +143,13 @@ const AddEventForm = () => {
           <Select
             value={category}
             options={[
-              { value: 'art', label: 'Art' },
-              { value: 'music', label: 'Music' },
-              { value: 'business', label: 'Business' },
-              { value: 'conference', label: 'Conference' },
-              { value: 'workshop', label: 'Workshop' },
-              { value: 'party', label: 'Party' },
-              { value: 'sport', label: 'Sport' },
+              { value: 'Art', label: 'Art' },
+              { value: 'Vusic', label: 'Music' },
+              { value: 'Business', label: 'Business' },
+              { value: 'Conference', label: 'Conference' },
+              { value: 'Workshop', label: 'Workshop' },
+              { value: 'Party', label: 'Party' },
+              { value: 'Sport', label: 'Sport' },
             ]}
             onChange={onCategoryChange}
           />
@@ -165,9 +164,9 @@ const AddEventForm = () => {
           <Select
             options={[
               { value: '', label: 'Input' },
-              { value: 'high', label: 'High' },
-              { value: 'medium', label: 'Medium' },
-              { value: 'low', label: 'Low' },
+              { value: 'High', label: 'High' },
+              { value: 'Medium', label: 'Medium' },
+              { value: 'Low', label: 'Low' },
             ]}
             value={priority}
             onChange={onPriorityChange}

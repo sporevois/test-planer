@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { ChevronSmallDown } from 'react-swm-icon-pack';
 
 export const Form = styled.form`
-  max-width: 1280px;
+  box-sizing: content-box;
+  width: 100%;
   margin-top: 25px;
   padding: 40px 40px 54px;
   box-sizing: border-box;
