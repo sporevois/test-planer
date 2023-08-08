@@ -13,6 +13,7 @@ export const Card = styled.li`
   box-sizing: border-box;
   box-shadow: 2px 4px 9px rgba(166, 141, 174, 0.28);
   background-color: rgba(255, 255, 255, 1);
+  transition: 250ms;
   :hover {
     cursor: pointer;
     scale: 1.02;
@@ -20,6 +21,10 @@ export const Card = styled.li`
 `;
 export const LinkWraper = styled(Link)`
   text-decoration: none;
+  :hover {
+    cursor: pointer;
+    scale: 1.02;
+  }
 `;
 
 export const ImageThumb = styled.div`
