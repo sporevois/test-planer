@@ -10,7 +10,7 @@ import {
 import { Text } from 'components/EventCard/EventCard.styled';
 import { EventPageSticker } from 'components/Stickers/Stickers';
 import Img from '../../images/Details_card_image.jpg';
-const EventDetailsCard = () => {
+const EventDetailsCard = cardData => {
   return (
     <EventBox>
       <ImageBox>

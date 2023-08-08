@@ -143,6 +143,7 @@ const AddEventForm = () => {
           <Select
             value={category}
             options={[
+              { value: '', label: 'Input' },
               { value: 'Art', label: 'Art' },
               { value: 'Vusic', label: 'Music' },
               { value: 'Business', label: 'Business' },
