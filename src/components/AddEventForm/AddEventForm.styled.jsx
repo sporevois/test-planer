@@ -50,7 +50,7 @@ export const TextareaLabel = styled.label`
   font-weight: 400;
   letter-spacing: 0.4px;
 `;
-export const Textarea = styled.input`
+export const Textarea = styled.textarea`
   box-sizing: border-box;
   width: 100%;
   height: 156px;

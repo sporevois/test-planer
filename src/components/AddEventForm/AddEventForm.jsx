@@ -26,11 +26,11 @@ const AddEventForm = () => {
 
   const checkPriority = value => {
     switch (value) {
-      case 'High':
+      case 'high':
         return setPriorityColor('rgba(255, 43, 119, 1)');
-      case 'Low':
+      case 'low':
         return setPriorityColor('rgba(107, 212, 117, 1)');
-      case 'Medium':
+      case 'medium':
         return setPriorityColor('rgba(226, 163, 0, 1)');
       default:
         return;
@@ -39,6 +39,7 @@ const AddEventForm = () => {
   const onCategoryChange = e => {
     const value = e.target.value;
     setCategory(value);
+    console.log(priority);
   };
 
   const onPriorityChange = e => {
@@ -141,14 +142,16 @@ const AddEventForm = () => {
         <Label>
           Category
           <Select
-            label="Input"
-            options={[
-              { value: '', label: 'Input' },
-              { value: 'high', label: 'High' },
-              { value: 'medium', label: 'Medium' },
-              { value: 'low', label: 'Low' },
-            ]}
             value={category}
+            options={[
+              { value: 'art', label: 'Art' },
+              { value: 'music', label: 'Music' },
+              { value: 'business', label: 'Business' },
+              { value: 'conference', label: 'Conference' },
+              { value: 'workshop', label: 'Workshop' },
+              { value: 'party', label: 'Party' },
+              { value: 'sport', label: 'Sport' },
+            ]}
             onChange={onCategoryChange}
           />
           <ChevronIcon color="rgba(123, 97, 255, 1)" />
@@ -160,15 +163,11 @@ const AddEventForm = () => {
         <Label>
           Priority
           <Select
-            label="Input"
             options={[
-              { value: 'art', label: 'Art' },
-              { value: 'music', label: 'Music' },
-              { value: 'business', label: 'Business' },
-              { value: 'conference', label: 'Conference' },
-              { value: 'workshop', label: 'Workshop' },
-              { value: 'party', label: 'Party' },
-              { value: 'sport', label: 'Sport' },
+              { value: '', label: 'Input' },
+              { value: 'high', label: 'High' },
+              { value: 'medium', label: 'Medium' },
+              { value: 'low', label: 'Low' },
             ]}
             value={priority}
             onChange={onPriorityChange}
