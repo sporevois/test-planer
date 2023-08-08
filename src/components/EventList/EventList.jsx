@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 const EventList = () => {
   const [events, setEvents] = useState([]);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
   useEffect(() => {
     const getEventsData = async () => {
@@ -13,7 +13,7 @@ const EventList = () => {
         const eventsData = await getEvents();
         setEvents([...eventsData]);
       } catch (error) {
-        setError(error.message);
+        return error.message;
       } finally {
         return;
       }
