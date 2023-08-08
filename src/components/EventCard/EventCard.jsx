@@ -23,7 +23,7 @@ const EventCard = eventData => {
     priority,
     priorityColor,
   } = eventData.data;
-  console.log(priorityColor);
+
   return (
     <Card>
       <LinkWraper to="/event">
